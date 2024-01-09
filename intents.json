@@ -1,0 +1,1222 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "hi",
+        "good morning",
+        "good afternoon",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello",
+        "Good to see you again",
+        "Hi there, how can I help?",
+        "Hello! Welcome to ESkills!",
+        "Hi there! How can we assist you today?",
+        "Hey! We're excited to help you with any IT inquiries."
+      ],
+      "context": [
+        ""
+      ]
+    },
+ {
+      "tag": "project_description",
+      "patterns": [
+        "my project consists of",
+        "my project is about",
+        "my idea is",
+        "i want to build an application that",
+        "i want to make a software that",
+        "i want to make a software specialized in",
+        "these are the details of my project",
+        "i'm looking to build a software that"
+      ],
+      "responses": [
+       
+        ""
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "answerno",
+      "patterns": [
+        "no",
+        "no I'm done",
+        "no I'm leaving",
+        "no I'm good"
+      ],
+      "responses": [
+       
+        "Okay then , feel free to come back ! "
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Goodbye! Feel free to return if you have more questions.",
+        "Take care! We're here whenever you need assistance.",
+        "Until next time! Have a great day!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "thnx",
+        "thank u",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [
+        ""
+      ],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "who_made_you",
+      "patterns": [
+        "Who made u",
+        "who is your owner",
+        "who created you"
+      ],
+      "responses": [
+        "I was created by ESKILLS, a software solution company "
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+
+    {
+      "tag": "where_you",
+      "patterns": [
+        "Where are you located",
+        "where is you",
+        "where are you now"
+      ],
+      "responses": [
+        "We exist in diverse countries, but in Tunisia , we are located in charguia 2, ariana "
+      ],
+      "context": [
+        ""
+      ]
+    },
+
+
+
+    {
+      "tag": "software_process",
+      "patterns": [
+        "software",
+        "Tell me about your development process",
+        "How do you create software?",
+        "Explain your coding practices",
+        "what do you do",
+        "I heard you're involved in software development.tell me more about your company?"
+      ],
+      "responses": [
+        "Our development process involves requirements gathering, design, coding, testing, and deployment.",
+        "We follow agile methodologies and prioritize iterative development.",
+        "We emphasize clean code and conduct regular code reviews for quality assurance.",
+        " we're a cutting-edge software development firm called ESkills. Our focus is on creating innovative digital solutions for businesses across various industries. We specialize in custom software development, mobile app development, web applications, and more.  Our team of skilled developers and designers work together to deliver top-notch products tailored to our clients' needs."
+      ]
+    },
+    {
+      "tag": "programming_languages",
+      "patterns": [
+        "programming languages",
+        "Which programming languages do you use?",
+        "What languages are your developers proficient in?",
+        "Tell me about your tech stack",
+        "what frameworks do you use "
+      ],
+      "responses": [
+        "We're well-versed in a range of technologies including but not limited to:Front-end: HTML, CSS, JavaScript (React, Angular, Vue.js)/ Back-end: Node.js, Python, Ruby on Rails / Mobile: iOS (Swift), Android (Kotlin) / Databases:MySQL, PostgreSQL, MongoDB/ Cloud: AWS, Azure, Google Cloud .. We're committed to staying up-to-date with the latest advancements to deliver the best solutions."
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered"
+      ],
+      "responses": [
+        "We could explore the opportunity for a software solution for your company"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "project_management",
+      "patterns": [
+        "How do you manage software projects?",
+        "project management",
+        "Tell me about your project management approach",
+        "Explain your use of project management tools"
+      ],
+      "responses": [
+        "We use Scrum for project management, holding daily standup meetings and sprint planning.",
+        "Our team relies on tools like Trello to track and manage project tasks."
+      ]
+    },
+    {
+      "tag": "quality_assurance",
+      "patterns": [
+        "assurance",
+        "How do you ensure software quality?",
+        "Tell me about your testing procedures",
+        "Explain your quality control process"
+      ],
+      "responses": [
+        "We conduct rigorous testing including unit, integration, and user acceptance testing.",
+        "Our QA team focuses on automation testing to catch bugs and ensure software stability."
+      ]
+    },
+    {
+      "tag": "software_deployment",
+      "patterns": [
+        "How do you deploy software?",
+        "Tell me about your deployment strategies",
+        "Explain your continuous integration and deployment"
+      ],
+      "responses": [
+        "We use CI/CD pipelines to automate the deployment process, ensuring frequent and reliable releases.",
+        "Our deployment strategies involve Docker containers and Kubernetes for scaling."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "support",
+        "How do you provide technical support?",
+        "Tell me about your customer support process",
+        "Explain your approach to handling software issues"
+      ],
+      "responses": [
+        "We offer 24/7 technical support via email and live chat, resolving issues promptly.",
+        "Our support team follows a ticketing system to address and resolve software-related problems."
+      ]
+    },
+    {
+      "tag": "project_examples",
+      "patterns": [
+        "project examples",
+        "example",
+        "Can you provide examples of your past projects?",
+        "Tell me about projects you've worked on",
+        "Give me some project showcases"
+      ],
+      "responses": [
+        "Certainly! We've tackled diverse projects, including an e-commerce platform for a fashion retailer, a logistics app for streamlined inventory management, and a medical VR simulation."
+      ]
+    },
+    {
+      "tag": "initial_contact",
+      "patterns": [
+        "I'm interested in partnering with your company",
+        "I want to work with you",
+        "I wanna work with u",
+        "How can I initiate a business deal?",
+        "I want to collaborate on a project"
+      ],
+      "responses": [
+        "We're excited to explore this opportunity with you! Our business development manager will guide you through the process. Could you please provide your full name, email address, and a brief project overview?"
+      ]
+    },
+    {
+      "tag": "user_details",
+      "patterns": [
+        "My name is [name], my email is [email], and I'm looking to [project_description]",
+        "Here are my details"
+      
+      ],
+      "responses": [
+        "Thank you for sharing your details, [name]! Our business development manager, [manager_name], will contact you soon. He'll discuss your project in-depth and explore collaboration possibilities."
+      ]
+    },
+ {
+      "tag": "contact",
+      "patterns": [
+        "who should I contact",
+        "who do I talk to",
+        "how can I buy your products"
+      
+      ],
+      "responses": [
+        " Our business development manager, [manager_name], will contact you. He'll discuss your project in-depth and explore collaboration possibilities."
+      ]
+    },
+
+    {
+      "tag": "project_estimate",
+      "patterns": [
+        "Can you provide an estimate on project timelines and costs?",
+        "Tell me about project timelines and costs",
+        "what is cost",
+        "how much money",
+        "price"
+      ],
+      "responses": [
+        "Certainly, [name]! Our project timelines and costs depend on project complexity. [manager_name] will gather details to give you a comprehensive estimate aligning with your expectations."
+      ]
+    },
+    {
+      "tag": "service_offerings",
+      "patterns": [
+        "offer",
+        "What services does your company provide?",
+        "Tell me about the range of solutions you offer.",
+        "What can I expect from your service offerings?"
+      ],
+      "responses": [
+        "We offer a wide array of services, including web development, mobile app development, custom software solutions, UI/UX design, and more. Our goal is to provide tailored solutions that address your unique business needs."
+      ]
+    },
+    {
+      "tag": "emerging_technologies",
+      "patterns": [
+        "new technologies",
+        "How does your company stay updated on emerging technologies?",
+        "Tell me about your approach to adopting new technologies.",
+        "What functionnalities do you provide?"
+      ],
+      "responses": [
+        "We actively research and experiment with emerging technologies & functionnalities like AI, blockchain, and IoT. Our team attends tech conferences and engages in continuous learning to stay at the forefront of innovation."
+      ]
+    },
+  {
+      "tag": "fields_domains",
+      "patterns": [
+        "what domains or fields do you cover",
+        "are you limitied to certain domains or fields?",
+        "are you limitied to certain fields?",
+        "What functionnalities do you provide?"
+      ],
+      "responses": [
+        "We cover a wide range of fields on which we apply our expertise, including but not limited to: Finance, Health, Medicine, Banks Transport, etc."
+      ]
+    },
+ {
+      "tag": "history",
+      "patterns": [
+        "what is your company's history?",
+        "what did you accomplish in the past?",
+        "history",
+        "what is your company's story?",
+        "story"
+      ],
+      "responses": [
+        "We were founded in 2015 by a couple of Engineering students, we then expanded our practice towards a larger audience, and now we exist in multiple locations."
+      ]
+    },
+{
+  "tag": "work_ethics",
+  "patterns": [
+    "What are your company's work ethics?",
+    "Tell me about your work principles.",
+    "How does your company approach work ethics?",
+    "Work ethics",
+    "Can you explain your work values?",
+    "Values in work"
+  ],
+  "responses": [
+    "At our company, we prioritize integrity and accountability in everything we do. We believe in open communication, teamwork, and a strong commitment to delivering high-quality results. Our work ethics also include a focus on continuous learning and personal growth for all team members."
+  ]
+},
+    {
+      "tag": "client_testimonials",
+      "patterns": [
+        "Do you have any client success stories?",
+        "Can you share some client testimonials?",
+        "Tell me about projects that left clients satisfied."
+      ],
+      "responses": [
+        "Absolutely! We've received glowing feedback from clients who praised our dedication, technical skills, and timely delivery. One client even mentioned that our solution significantly boosted their business performance."
+      ]
+    },
+    {
+      "tag": "collaboration_process_steps",
+      "patterns": [
+        "Can you walk me through the collaboration process?",
+        "How does the project development process unfold?"
+        
+      ],
+      "responses": [
+        "Of course! Our collaboration process typically begins with an initial consultation to understand your needs. We then gather requirements, propose solutions, sign contracts, move through development phases, conduct rigorous testing, and finally deploy the software."
+      ]
+    },
+    {
+      "tag": "consultation_request",
+      "patterns": [
+        "Can I schedule a consultation to discuss my project?",
+        "How do I request a consultation?",
+        "I'd like to set up a meeting to explore collaboration."
+      ],
+      "responses": [
+        "Absolutely! We're thrilled to discuss your project. To schedule a consultation, please provide your availability and contact details. Our team will get back to you to coordinate the meeting."
+      ]
+    },
+    {
+      "tag": "technological_expertise",
+      "patterns": [
+        "What is your team's expertise in tech?",
+        "Tell me about the technologies your developers specialize in.",
+        "Can you elaborate on your technological capabilities?"
+      ],
+      "responses": [
+        "Our team boasts expertise in a wide range of technologies, including front-end frameworks like React and Angular, back-end technologies like Node.js and Django, and databases such as MySQL and MongoDB."
+      ]
+    },
+    {
+      "tag": "security_measures",
+      "patterns": [
+        "How do you ensure data security?",
+        "security",
+        "data security",
+        "Tell me about your approach to cybersecurity.",
+        "Can you explain your data protection measures?"
+      ],
+      "responses": [
+        "Data security is paramount to us. We implement encryption protocols, regular security audits, and follow industry best practices to safeguard sensitive information and prevent unauthorized access."
+      ]
+    },
+    {
+      "tag": "customization_options",
+      "patterns": [
+        "Can your solutions be customized to fit my specific needs?",
+        "Tell me about the level of customization you offer.",
+        "Are your software solutions adaptable to my business requirements?"
+      ],
+      "responses": [
+        "Absolutely! Our solutions are tailored to meet your unique business requirements. We prioritize customization to ensure our software aligns perfectly with your goals and processes."
+      ]
+    },
+    {
+      "tag": "agile_development",
+      "patterns": [
+        "How do you approach software development?",
+        "Tell me about your development methodologies.",
+        "Can you elaborate on your Agile practices?"
+      ],
+      "responses": [
+        "We are strong proponents of Agile methodologies, particularly Scrum. Our iterative approach fosters flexibility, collaboration, and rapid development cycles, enabling us to adapt to changes and deliver results efficiently."
+      ]
+    },
+    {
+      "tag": "maintenance_and_support",
+      "patterns": [
+        "What kind of post-development support do you offer?",
+        "Tell me about your maintenance services.",
+        "Can I expect ongoing support after the project is completed?"
+      ],
+      "responses": [
+        "We provide comprehensive post-development support, including maintenance, bug fixes, updates, and technical assistance. Our goal is to ensure your software remains optimal and performs seamlessly over time."
+      ]
+    },
+    {
+      "tag": "who are you",
+      "patterns": [
+        "Who are you?",
+        "who is ",
+        "who ",
+        "eskills",
+        "who is your company"
+      ],
+      "responses": [
+        "we're a cutting-edge software development firm called ESkills. Our focus is on creating innovative digital solutions for businesses across various industries."
+      ],
+      "context": []
+    },
+
+
+
+
+
+
+
+
+
+
+{
+      "tag": "product_service",
+      "patterns": [
+        "Can you explain the main products/services your company offers?",
+        "How does your software solution address specific business challenges?"
+      ],
+      "responses": [
+        "Our company offers a range of software solutions tailored to various industries. Our products include custom software development, mobile apps, web applications, and more. Each solution is designed to tackle specific business challenges, providing efficiency, scalability, and innovation."
+      ]
+    },
+    {
+      "tag": "use_case_scenarios",
+      "patterns": [
+        "I run an e-commerce business. How can your software help me manage inventory and orders?",
+        "As a healthcare provider, how can your solution assist in patient record management?"
+      ],
+      "responses": [
+        "For e-commerce businesses, our software offers advanced inventory management, order processing, and customer relationship features. In healthcare, our solution streamlines patient record keeping, appointment scheduling, and secure data sharing."
+      ]
+    },
+    {
+      "tag": "technical_implementation",
+      "patterns": [
+        "What technologies and platforms does your software solution integrate with?",
+        "Can you describe the API capabilities for integrating your solution into existing systems?"
+      ],
+      "responses": [
+        "Our software is designed to integrate seamlessly with popular technologies and platforms. It supports APIs for easy integration with existing systems, enabling data sharing and enhancing functionality across different software applications."
+      ]
+    },
+    {
+      "tag": "customization_flexibility",
+      "patterns": [
+        "How customizable is your software solution to adapt to different business processes?",
+        "Can I add new features to the software to meet unique requirements?"
+      ],
+      "responses": [
+        "Our software is highly customizable, allowing businesses to tailor features and workflows to their unique processes. You can add new features to address specific requirements, ensuring the software aligns perfectly with your business needs."
+      ]
+    },
+    {
+      "tag": "data_handling_security",
+      "patterns": [
+        "How does your solution handle sensitive customer data?",
+        "What security measures are in place to protect data and prevent breaches?"
+      ],
+      "responses": [
+        "Data security is a top priority. Our solution employs robust encryption methods to protect sensitive customer data. Regular security audits, user authentication, and compliance with industry standards ensure data is safeguarded and breaches are prevented."
+      ]
+    },
+    {
+      "tag": "user_experience_interface",
+      "patterns": [
+        "Can you demonstrate how users interact with your software through a user interface?",
+        "How intuitive is the user experience, and what steps have you taken to improve it?"
+      ],
+      "responses": [
+        "Certainly! Our user interface is designed for intuitive navigation and ease of use. We conduct user testing and gather feedback to continually improve the user experience, ensuring that users can seamlessly interact with the software and achieve their goals."
+      ]
+    },
+    {
+      "tag": "integration_migration",
+      "patterns": [
+        "If we're transitioning from a different software, how seamless is the migration process?",
+        "Can you provide examples of successful integrations with third-party tools?"
+      ],
+      "responses": [
+        "Migrating to our software is a smooth process. We offer migration support to ensure data transfer and system integration are seamless. We have successfully integrated our solution with various third-party tools, enhancing overall functionality and user experience."
+      ]
+    },
+    {
+      "tag": "scalability_performance",
+      "patterns": [
+        "How does your solution handle increased user loads and data volumes?",
+        "Do you have any performance metrics or case studies to demonstrate scalability?"
+      ],
+      "responses": [
+        "Our solution is designed to scale effortlessly. It can handle increased user loads and growing data volumes without compromising performance. We have performance metrics and case studies showcasing how our solution maintains optimal performance even during peak usage."
+      ]
+    },
+    {
+      "tag": "customer_support_maintenance",
+      "patterns": [
+        "What kind of customer support is available after implementing your solution?",
+        "How often do you release updates, and how are they managed?"
+      ],
+      "responses": [
+        "We offer comprehensive customer support post-implementation, including technical assistance and issue resolution. Our regular updates ensure that the software remains up-to-date, secure, and aligned with evolving business needs, providing a seamless user experience."
+      ]
+    },
+    {
+      "tag": "roi_business_value",
+      "patterns": [
+        "Can you provide examples of companies that have seen significant ROI after implementing your solution?",
+        "How do you measure the tangible business value your solution brings?"
+      ],
+      "responses": [
+        "Certainly! We have numerous success stories of companies that have achieved significant ROI by implementing our solution. We measure the business value through improved efficiency, reduced operational costs, increased customer satisfaction, and quantifiable growth in key metrics."
+      ]
+    },
+    {
+      "tag": "emerging_technologies",
+      "patterns": [
+        "Are you incorporating AI or machine learning capabilities into your software?",
+        "How do you stay current with new technologies to enhance your solutions?"
+      ],
+      "responses": [
+        "Absolutely! We're actively integrating AI and machine learning capabilities into our software to provide advanced insights and automation. We stay current with new technologies through continuous research, attending conferences, and collaborating with experts in the field."
+      ]
+    },
+    {
+      "tag": "future_roadmap",
+      "patterns": [
+        "What are the upcoming features or improvements in your software's roadmap?",
+        "How do you incorporate user feedback into your product development?"
+      ],
+      "responses": [
+        "Our software roadmap includes exciting new features and enhancements based on industry trends and user feedback. User feedback is invaluable in shaping our development priorities. Regular updates ensure that our software remains cutting-edge and aligned with user needs."
+      ]
+    },
+
+
+
+
+
+
+
+
+
+ {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "hi",
+        "good morning",
+        "good afternoon",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello",
+        "Good to see you again",
+        "Hi there, how can I help?",
+        "Hello! Welcome to ESkills!",
+        "Hi there! How can we assist you today?",
+        "Hey! We're excited to help you with any IT inquiries."
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Goodbye! Feel free to return if you have more questions.",
+        "Take care! We're here whenever you need assistance.",
+        "Until next time! Have a great day!"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "thnx",
+        "thank u",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [
+        ""
+      ],
+      "responses": [
+        "Sorry, can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "software_process",
+      "patterns": [
+        "software",
+        "Tell me about your development process",
+        "How do you create software?",
+        "Explain your coding practices",
+        "what do you do",
+        "I heard you're involved in software development.tell me more about your company?"
+      ],
+      "responses": [
+        "Our development process involves requirements gathering, design, coding, testing, and deployment.",
+        "We follow agile methodologies and prioritize iterative development.",
+        "We emphasize clean code and conduct regular code reviews for quality assurance.",
+        " we're a cutting-edge software development firm called ESkills. Our focus is on creating innovative digital solutions for businesses across various industries. We specialize in custom software development, mobile app development, web applications, and more.  Our team of skilled developers and designers work together to deliver top-notch products tailored to our clients' needs."
+      ]
+    },
+    {
+      "tag": "programming_languages",
+      "patterns": [
+        "programming languages",
+        "Which programming languages do you use?",
+        "What languages are your developers proficient in?",
+        "Tell me about your tech stack",
+        "what frameworks do you use "
+      ],
+      "responses": [
+        "We're well-versed in a range of technologies including but not limited to:Front-end: HTML, CSS, JavaScript (React, Angular, Vue.js)/ Back-end: Node.js, Python, Ruby on Rails / Mobile: iOS (Swift), Android (Kotlin) / Databases:MySQL, PostgreSQL, MongoDB/ Cloud: AWS, Azure, Google Cloud .. We're committed to staying up-to-date with the latest advancements to deliver the best solutions."
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What you can do?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What support is offered"
+      ],
+      "responses": [
+        "We could explore the opportunity for a software solution for your company"
+      ],
+      "context": [
+        ""
+      ]
+    },
+    {
+      "tag": "project_management",
+      "patterns": [
+        "How do you manage software projects?",
+        "project management",
+        "Tell me about your project management approach",
+        "Explain your use of project management tools"
+      ],
+      "responses": [
+        "We use Scrum for project management, holding daily standup meetings and sprint planning.",
+        "Our team relies on tools like Trello to track and manage project tasks."
+      ]
+    },
+    {
+      "tag": "quality_assurance",
+      "patterns": [
+        "assurance",
+        "How do you ensure software quality?",
+        "Tell me about your testing procedures",
+        "Explain your quality control process"
+      ],
+      "responses": [
+        "We conduct rigorous testing including unit, integration, and user acceptance testing.",
+        "Our QA team focuses on automation testing to catch bugs and ensure software stability."
+      ]
+    },
+    {
+      "tag": "software_deployment",
+      "patterns": [
+        "How do you deploy software?",
+        "Tell me about your deployment strategies",
+        "Explain your continuous integration and deployment"
+      ],
+      "responses": [
+        "We use CI/CD pipelines to automate the deployment process, ensuring frequent and reliable releases.",
+        "Our deployment strategies involve Docker containers and Kubernetes for scaling."
+      ]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "support",
+        "How do you provide technical support?",
+        "Tell me about your customer support process",
+        "Explain your approach to handling software issues"
+      ],
+      "responses": [
+        "We offer 24/7 technical support via email and live chat, resolving issues promptly.",
+        "Our support team follows a ticketing system to address and resolve software-related problems."
+      ]
+    },
+    {
+      "tag": "project_examples",
+      "patterns": [
+        "project examples",
+        "example",
+        "Can you provide examples of your past projects?",
+        "Tell me about projects you've worked on",
+        "Give me some project showcases"
+      ],
+      "responses": [
+        "Certainly! We've tackled diverse projects, including an e-commerce platform for a fashion retailer, a logistics app for streamlined inventory management, and a medical VR simulation."
+      ]
+    },
+    {
+      "tag": "initial_contact",
+      "patterns": [
+        "I'm interested in partnering with your company",
+        "I want to work with you",
+        "I wanna work with u",
+        "How can I initiate a business deal?",
+        "I want to collaborate on a project"
+      ],
+      "responses": [
+        "We're excited to explore this opportunity with you! Our business development manager will guide you through the process. Could you please provide your full name, email address, and a brief project overview?"
+      ]
+    },
+    {
+      "tag": "user_details",
+      "patterns": [
+        "My name is [name], my email is [email], and I'm looking to [project_description]",
+        "Here are my details"
+      ],
+      "responses": [
+        "Thank you for sharing your details, [name]! Our business development manager, [manager_name], will contact you soon. He'll discuss your project in-depth and explore collaboration possibilities."
+      ]
+    },
+    {
+      "tag": "project_estimate",
+      "patterns": [
+        "Can you provide an estimate on project timelines and costs?",
+        "Tell me about project timelines and costs",
+        "what is cost",
+        "how much money",
+        "price"
+      ],
+      "responses": [
+        "Certainly, [name]! Our project timelines and costs depend on project complexity. [manager_name] will gather details to give you a comprehensive estimate aligning with your expectations."
+      ]
+    },
+    {
+      "tag": "service_offerings",
+      "patterns": [
+        "offer",
+        "What services does your company provide?",
+        "Tell me about the range of solutions you offer.",
+        "What can I expect from your service offerings?"
+      ],
+      "responses": [
+        "We offer a wide array of services, including web development, mobile app development, custom software solutions, UI/UX design, and more. Our goal is to provide tailored solutions that address your unique business needs."
+      ]
+    },
+    {
+      "tag": "emerging_technologies",
+      "patterns": [
+        "new technologies",
+        "How does your company stay updated on emerging technologies?",
+        "Tell me about your approach to adopting new technologies."
+      ],
+      "responses": [
+        "We actively research and experiment with emerging technologies like AI, blockchain, and IoT. Our team attends tech conferences and engages in continuous learning to stay at the forefront of innovation."
+      ]
+    },
+    {
+      "tag": "client_testimonials",
+      "patterns": [
+        "Do you have any client success stories?",
+        "Can you share some client testimonials?",
+        "Tell me about projects that left clients satisfied."
+      ],
+      "responses": [
+        "Absolutely! We've received glowing feedback from clients who praised our dedication, technical skills, and timely delivery. One client even mentioned that our solution significantly boosted their business performance."
+      ]
+    },
+    {
+      "tag": "collaboration_process_steps",
+      "patterns": [
+        "Can you walk me through the collaboration process?",
+        "How does the project development process unfold?"
+      ],
+      "responses": [
+        "what's the processes of getting a software from ur company ?",
+        "Of course! Our collaboration process typically begins with an initial consultation to understand your needs. We then gather requirements, propose solutions, sign contracts, move through development phases, conduct rigorous testing, and finally deploy the software."
+      ]
+    },
+    {
+      "tag": "consultation_request",
+      "patterns": [
+        "Can I schedule a consultation to discuss my project?",
+        "How do I request a consultation?",
+        "I'd like to set up a meeting to explore collaboration."
+      ],
+      "responses": [
+        "Absolutely! We're thrilled to discuss your project. To schedule a consultation, please provide your availability and contact details. Our team will get back to you to coordinate the meeting."
+      ]
+    },
+    {
+      "tag": "technological_expertise",
+      "patterns": [
+        "What is your team's expertise in tech?",
+        "Tell me about the technologies your developers specialize in.",
+        "Can you elaborate on your technological capabilities?"
+      ],
+      "responses": [
+        "Our team boasts expertise in a wide range of technologies, including front-end frameworks like React and Angular, back-end technologies like Node.js and Django, and databases such as MySQL and MongoDB."
+      ]
+    },
+    {
+      "tag": "security_measures",
+      "patterns": [
+        "How do you ensure data security?",
+        "security",
+        "data security",
+        "Tell me about your approach to cybersecurity.",
+        "Can you explain your data protection measures?"
+      ],
+      "responses": [
+        "Data security is paramount to us. We implement encryption protocols, regular security audits, and follow industry best practices to safeguard sensitive information and prevent unauthorized access."
+      ]
+    },
+    {
+      "tag": "customization_options",
+      "patterns": [
+        "Can your solutions be customized to fit my specific needs?",
+        "Tell me about the level of customization you offer.",
+        "Are your software solutions adaptable to my business requirements?"
+      ],
+      "responses": [
+        "Absolutely! Our solutions are tailored to meet your unique business requirements. We prioritize customization to ensure our software aligns perfectly with your goals and processes."
+      ]
+    },
+    {
+      "tag": "agile_development",
+      "patterns": [
+        "How do you approach software development?",
+        "Tell me about your development methodologies.",
+        "Can you elaborate on your Agile practices?"
+      ],
+      "responses": [
+        "We are strong proponents of Agile methodologies, particularly Scrum. Our iterative approach fosters flexibility, collaboration, and rapid development cycles, enabling us to adapt to changes and deliver results efficiently."
+      ]
+    },
+    {
+      "tag": "maintenance_and_support",
+      "patterns": [
+        "What kind of post-development support do you offer?",
+        "Tell me about your maintenance services.",
+        "Can I expect ongoing support after the project is completed?"
+      ],
+      "responses": [
+        "We provide comprehensive post-development support, including maintenance, bug fixes, updates, and technical assistance. Our goal is to ensure your software remains optimal and performs seamlessly over time."
+      ]
+    },
+    {
+      "tag": "who are you",
+      "patterns": [
+        "Who are you?",
+        "who is ",
+        "who ",
+        "eskills",
+        "who is your company"
+      ],
+      "responses": [
+        "we're a cutting-edge software development firm called ESkills. Our focus is on creating innovative digital solutions for businesses across various industries."
+      ],
+      "context": []
+
+      
+    },
+    {
+      "tag": "product_service",
+      "patterns": [
+        "Can you explain the main products/services your company offers?",
+        "How does your software solution address specific business challenges?"
+      ],
+      "responses": [
+        "Our company offers a range of software solutions tailored to various industries. Our products include custom software development, mobile apps, web applications, and more. Each solution is designed to tackle specific business challenges, providing efficiency, scalability, and innovation."
+      ]
+    },
+    {
+      "tag": "use_case_scenarios",
+      "patterns": [
+        "I run an e-commerce business. How can your software help me manage inventory and orders?",
+        "As a healthcare provider, how can your solution assist in patient record management?"
+      ],
+      "responses": [
+        "For e-commerce businesses, our software offers advanced inventory management, order processing, and customer relationship features. In healthcare, our solution streamlines patient record keeping, appointment scheduling, and secure data sharing."
+      ]
+    },
+    {
+      "tag": "technical_implementation",
+      "patterns": [
+        "What technologies and platforms does your software solution integrate with?",
+        "Can you describe the API capabilities for integrating your solution into existing systems?"
+      ],
+      "responses": [
+        "Our software is designed to integrate seamlessly with popular technologies and platforms. It supports APIs for easy integration with existing systems, enabling data sharing and enhancing functionality across different software applications."
+      ]
+    },
+    {
+      "tag": "customization_flexibility",
+      "patterns": [
+        "How customizable is your software solution to adapt to different business processes?",
+        "Can I add new features to the software to meet unique requirements?"
+      ],
+      "responses": [
+        "Our software is highly customizable, allowing businesses to tailor features and workflows to their unique processes. You can add new features to address specific requirements, ensuring the software aligns perfectly with your business needs."
+      ]
+    },
+    {
+      "tag": "data_handling_security",
+      "patterns": [
+        "How does your solution handle sensitive customer data?",
+        "What security measures are in place to protect data and prevent breaches?"
+      ],
+      "responses": [
+        "Data security is a top priority. Our solution employs robust encryption methods to protect sensitive customer data. Regular security audits, user authentication, and compliance with industry standards ensure data is safeguarded and breaches are prevented."
+      ]
+    },
+    {
+      "tag": "user_experience_interface",
+      "patterns": [
+        "Can you demonstrate how users interact with your software through a user interface?",
+        "How intuitive is the user experience, and what steps have you taken to improve it?"
+      ],
+      "responses": [
+        "Certainly! Our user interface is designed for intuitive navigation and ease of use. We conduct user testing and gather feedback to continually improve the user experience, ensuring that users can seamlessly interact with the software and achieve their goals."
+      ]
+    },
+    {
+      "tag": "integration_migration",
+      "patterns": [
+        "If we're transitioning from a different software, how seamless is the migration process?",
+        "Can you provide examples of successful integrations with third-party tools?"
+      ],
+      "responses": [
+        "Migrating to our software is a smooth process. We offer migration support to ensure data transfer and system integration are seamless. We have successfully integrated our solution with various third-party tools, enhancing overall functionality and user experience."
+      ]
+    },
+    {
+      "tag": "scalability_performance",
+      "patterns": [
+        "How does your solution handle increased user loads and data volumes?",
+        "Do you have any performance metrics or case studies to demonstrate scalability?"
+      ],
+      "responses": [
+        "Our solution is designed to scale effortlessly. It can handle increased user loads and growing data volumes without compromising performance. We have performance metrics and case studies showcasing how our solution maintains optimal performance even during peak usage."
+      ]
+    },
+    {
+      "tag": "customer_support_maintenance",
+      "patterns": [
+        "What kind of customer support is available after implementing your solution?",
+        "How often do you release updates, and how are they managed?"
+      ],
+      "responses": [
+        "We offer comprehensive customer support post-implementation, including technical assistance and issue resolution. Our regular updates ensure that the software remains up-to-date, secure, and aligned with evolving business needs, providing a seamless user experience."
+      ]
+    },
+   {
+  "tag": "disliked_result",
+  "patterns": [
+    "What if I didn't like the result?",
+    "I'm not satisfied with the outcome, what can I do?",
+    "What if the result doesn't meet my expectations?",
+    "Disliked result",
+    "Unsatisfactory outcome"
+  ],
+  "responses": [
+    "If you find that you're not satisfied with the result, we encourage you to reach out to our customer support team. We value your feedback and will work with you to understand your concerns. Depending on the situation, we might be able to make adjustments or find a solution that aligns better with your expectations. Your satisfaction is important to us, and we're committed to ensuring a positive experience."
+  ]
+},
+{
+  "tag": "data_storage",
+  "patterns": [
+    "What do you use to store data?",
+    "How does your company store information?",
+    "Tell me about your data storage methods.",
+    "Data storage",
+    "Where is my information stored?",
+    "What technology do you use for storing data?"
+  ],
+  "responses": [
+    "We take data security seriously. Your information is stored in encrypted databases hosted on secure servers. We use a combination of industry-standard technologies and best practices to ensure the confidentiality and integrity of your data. Our approach to data storage is designed to meet stringent security and privacy standards to provide you with peace of mind."
+  ]
+},
+{
+  "tag": "work_environment",
+  "patterns": [
+    "Can you describe your work environment?",
+    "Tell me about the atmosphere at your company.",
+    "What's it like to work in your organization?",
+    "Work environment",
+    "Describe your workplace culture.",
+    "What can I expect from your office environment?"
+  ],
+  "responses": [
+    "Our work environment is built on collaboration, innovation, and mutual respect. We foster an inclusive and diverse atmosphere where team members are encouraged to share ideas and learn from one another. Our offices are designed to promote comfort and productivity, with spaces for focused work and areas for team discussions. We believe in maintaining a healthy work-life balance and provide resources for professional growth and development."
+  ]
+},
+
+{
+  "tag": "job_openings",
+  "patterns": [
+    "Are you hiring right now?",
+    "Do you have any job openings?",
+    "Are there any career opportunities at your company?",
+    "Job vacancies",
+    "Can I apply for a job at your organization?",
+    "Current job opportunities"
+  ],
+  "responses": [
+    "Yes, we do have job openings from time to time. We recommend visiting our careers page on our website to see the latest job postings and to learn more about the positions available. We're always on the lookout for talented individuals who align with our company's values and goals. If you find a suitable position, we encourage you to submit your application through our online portal."
+  ]
+},
+{
+  "tag": "payment_methods",
+  "patterns": [
+    "What payment methods do you accept?",
+    "How can I pay for your products/services?",
+    "Tell me about your accepted payment options.",
+    "Payment methods",
+    "What forms of payment are available?",
+    "Can you explain your payment process?"
+  ],
+  "responses": [
+    "We offer a variety of payment methods to make your experience convenient. Currently, we accept major credit cards, such as Visa, MasterCard, and American Express. Additionally, we support online payment platforms like PayPal and digital wallets. We are continuously exploring new payment options to better serve our customers' needs and preferences."
+  ]
+},
+{
+  "tag": "mobile_development",
+  "patterns": [
+    "Do you work on mobile development?",
+    "Are you involved in mobile projects?",
+    "Can you help with mobile development?",
+    "mobile development",
+    "Is mobile one of your areas of expertise?"
+  ],
+  "responses": [
+    "Yes, we specialize in mobile development! Our team has extensive experience in this area and has successfully delivered various projects using {technology}. Whether you're looking for {technology} solutions or advice, we're here to assist you with your development needs."
+  ]
+},
+{
+  "tag": "user_name",
+  "patterns": [
+    "my name is {name}",
+    "call me {name}",
+    "you can call me {name}"
+  ],
+  "responses": [
+    "Hello, {name}! How can I assist you today?"
+  ]
+},
+
+
+
+
+
+
+    {
+      "tag": "roi_business_value",
+      "patterns": [
+        "Can you provide examples of companies that have seen significant ROI after implementing your solution?",
+        "How do you measure the tangible business value your solution brings?"
+      ],
+      "responses": [
+        "Certainly! We have numerous success stories of companies that have achieved significant ROI by implementing our solution. We measure the business value through improved efficiency, reduced operational costs, increased customer satisfaction, and quantifiable growth in key metrics."
+      ]
+    },
+    {
+      "tag": "emerging_technologies",
+      "patterns": [
+        "Are you incorporating AI or machine learning capabilities into your software?",
+        "How do you stay current with new technologies to enhance your solutions?"
+      ],
+      "responses": [
+        "Absolutely! We're actively integrating AI and machine learning capabilities into our software to provide advanced insights and automation. We stay current with new technologies through continuous research, attending conferences, and collaborating with experts in the field."
+      ]
+    },
+    {
+      "tag": "future_roadmap",
+      "patterns": [
+        "What are the upcoming features or improvements in your software's roadmap?",
+        "How do you incorporate user feedback into your product development?"
+      ],
+      "responses": [
+        "Our software roadmap includes exciting new features and enhancements based on industry trends and user feedback. User feedback is invaluable in shaping our development priorities. Regular updates ensure that our software remains cutting-edge and aligned with user needs."
+      ]
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+}
