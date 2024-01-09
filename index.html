@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        /* Styles for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        /* Styles for the chat container */
+        .chat-container {
+            width: 300px;
+            height: 400px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow-y: scroll;
+            padding: 10px;
+        }
+        
+        /* Styles for chat messages */
+        .chat-message {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+        }
+        
+        /* Styles for the input container */
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        /* Styles for the input field */
+        #user-input {
+            flex-grow: 2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        
+        /* Styles for the send button */
+        #send-button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        #send-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to ESkills chatbot!</h1>
+    
+    <div class="chat-container" id="chat-container">
+        <!-- Chat messages will be displayed here -->
+    </div>
+    
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="send-button">Send</button>
+    </div>
+
+    <script>
+        const chatContainer = document.getElementById("chat-container");
+        const userInput = document.getElementById("user-input");
+        const sendButton = document.getElementById("send-button");
+
+        sendButton.addEventListener("click", function() {
+            const userMessage = userInput.value;
+            if (userMessage.trim() === "") return;
+
+            // Display user message
+            displayMessage("You: " + userMessage, false);
+
+            // Send the user message to your chatbot logic (using the chatbot_response function)
+            sendUserMessageToChatbot(userMessage);
+
+            // Clear the input field
+            userInput.value = "";
+        });
+
+        function displayMessage(message, isChatbot) {
+            const messageDiv = document.createElement("div");
+            messageDiv.classList.add("chat-message");
+            if (isChatbot) {
+                messageDiv.classList.add("bot");
+            }
+            messageDiv.textContent = message;
+            chatContainer.appendChild(messageDiv);
+
+            // Scroll to the bottom of the chat container
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Replace this function with your actual chatbot integration
+        function sendUserMessageToChatbot(userMessage) {
+            // Make an AJAX request to your Flask app's /predict route
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "/predict", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const chatbotResponse = xhr.responseText;
+                    setTimeout(() => displayMessage("Chatbot: " + chatbotResponse, true), 500);
+                }
+            };
+            xhr.send("user_input=" + userMessage);
+        }
+    </script>
+</body>
+</html>
